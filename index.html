@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="I am an undergraduate student specializing in the field of mathematically inspired Art at New College of Florida." />
+<meta name="keyword" content="art,math,geometry,Nathan Wilson, Nathan, Wilson, New College of Florida, sculpture, tiling sequences" />
+<title>Dankness Arts</title>
+<style>	
+
+#container {
+	width:50em;
+	padding:0;
+	margin:0 auto;
+	font-family:Calibri, sans-serif;
+}
+
+#nav {
+	border:1px solid #ccc;
+	border-width:1px 0;
+	list-style:none;
+	margin:0 0 4em 0;
+	padding:0;
+	text-align:center;
+}
+
+#nav li {
+	position:relative;
+	display:inline;
+}
+
+#nav a {
+	display:inline-block;
+	padding:0.625em 1.875em 0.625em 1.875em;
+}
+
+#nav li:hover a {
+	text-decoration:underline;
+	background:#f1f1f1;
+}
+
+a {
+	color:#930;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+.slider {
+    background-color: #fff;
+    box-shadow: inset 0 0 2px hsla(0,0%,0%,.2),
+                0 3px 1px hsla(0,0%,100%,.75),
+                0 -1px 1px 2px hsla(0,0%,0%,.1);
+    height: 25em;
+    left: 36%;
+    margin: 0em -13em;
+	margin-bottom: 6em;
+    padding: .5em;
+    position: relative;
+    top: 50%;
+    width: 37.5em;
+}
+.slider:before {
+    background-color: #22130c;
+    bottom: -2.5em;
+    box-shadow: inset 0 1px 1px 1px hsla(0,0%,100%,.2),
+                inset 0 -2px 1px hsla(0,0%,0%,.4),
+                0 5px 50px hsla(0,0%,0%,.25),
+                0 20px 20px -15px hsla(0,0%,0%,.2),
+                0 30px 20px -15px hsla(0,0%,0%,.15),
+                0 40px 20px -15px hsla(0,0%,0%,.1);
+    content: '';
+    left: -2.5em;
+    position: absolute;
+    right: -2.5em;
+    top: -2.5em;
+    z-index: -1;
+}
+.slider:after {
+    background-color: #fff5e5;
+    bottom: -1.5em;
+    box-shadow: 0 2px 1px hsla(0,0%,100%,.2),
+                0 -1px 1px 1px hsla(0,0%,0%,.4),
+                inset 0 2px 3px 1px hsla(0,0%,0%,.2),
+                inset 0 4px 3px 1px hsla(0,0%,0%,.2),
+                inset 0 6px 3px 1px hsla(0,0%,0%,.1);
+    content: '';
+    left: -1.5em;
+    position: absolute;
+    right: -1.5em;
+    top: -1.5em;
+    z-index: -1;
+}
+.slider li {
+    box-shadow: 0 -1px 0 2px hsla(0,0%,0%,.03);
+    list-style: none;
+    position: absolute;
+}
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: #111;
+    background-image: linear-gradient(transparent, hsla(0,0%,0%,.25));
+    border: .2em solid transparent;
+    bottom: .5em;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    height: .5em;
+    left: 24em;
+    opacity: 0;
+    position: absolute;
+    transition: .25s;
+    width: .5em;
+    visibility: hidden;
+    z-index: 10;
+}
+.slider label:after {
+    border-radius: 100%;
+    bottom: -.2em;
+    box-shadow: inset 0 0 0 .2em #111,
+                inset 0 2px 2px #000,
+                0 1px 1px hsla(0,0%,100%,.25);
+    content: '';
+    left: -.2em;
+    position: absolute;
+    right: -.2em;
+    top: -.2em;
+}
+.slider:hover label {
+    opacity: 1;
+    visibility: visible;
+}
+.slider input:checked + label {
+    background-color: #fff;
+}
+.slider:hover li:nth-child(1) label {
+    left: .5em;
+}
+.slider:hover li:nth-child(2) label {
+    left: 2em;
+}
+.slider:hover li:nth-child(3) label {
+    left: 3.5em;
+}
+.slider:hover li:nth-child(4) label {
+    left: 5em;
+}
+.slider img {
+    height: 25em;
+    opacity: 0;
+    transition: .25s;
+    width: 37.5em;
+    vertical-align: top;
+    visibility: hidden;
+}
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+footer {
+	text-align: right;
+}
+
+</style>
+<link rel="shortcut icon" href="images/dwfavicon.png">
+</head>
+
+<body>
+<div id="container">  
+  <h1>Dankness Arts</h1>
+  <h3>Experience it</h3>
+    <ul id="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="works.html">Works</a></li>
+    </ul>	
+	<ul class="slider">
+		<li>
+			<input type="radio" id="slide1" name="slide" checked>
+			<label for="slide1"></label>
+			<img src="images/methodman.jpg">
+		</li>
+		<li>
+			<input type="radio" id="slide2" name="slide">
+			<label for="slide2"></label>
+			<img src="images/redman.jpg">
+		</li>
+		<li>
+			<input type="radio" id="slide3" name="slide">
+			<label for="slide3"></label>
+			<img src="images/granddaddypurps.jpg">
+		</li>
+		<li>
+			<input type="radio" id="slide4" name="slide">
+			<label for="slide4"></label>
+			<img src="images/shiznit.jpg">
+		</li>
+	</ul>
+    <footer>Website Design by 'Adro-My-Pedro' Williams ©2013</footer>
+  </div>
+</body>
+</html>
